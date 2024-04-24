@@ -180,11 +180,16 @@ nav ul li a:hover::after {
 
 .side-bar ul li:hover {
     transform: translate(10px, -3px);
-    background: #008DDA;
+    background: white;
     padding-left: 5px;
     border: 1px solid #41C9E2;
     box-shadow: -8px 8px 22px 1px rgba(0, 0, 0, 0.2);
 }
+
+.side-bar ul li a:hover {
+    color: #41C9E2;
+}
+
 
 .side-bar ul li a {
     text-decoration: none;
