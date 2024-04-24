@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/d33424292c.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <h1 class="logo"><span class="st">Lak</span><span class="ed">shya</span></h1>
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p><i>Web Developer</i></p>
+        <h1>Hi, I'm <span>Lakshya</span> <br> <span>Gupta</span> from Rajasthan</h1>
+      </div>
+    </div>
+  </div>
+  <div class="side-bar">
+    <ul>
+      <li><a href="#header"><i class="fa-solid fa-house"></i></a></li>
+      <li><a href="#about"><i class="fa-solid fa-user"></i></a></li>
+      <li><a href="#services"><i class="fa-solid fa-briefcase"></i></a></li>
+      <li><a href="#portfolio"><i class="fa-solid fa-code"></i></a></li>
+      <li><a href="#contact"><i class="fa-solid fa-phone"></i></a></li>
+    </ul>
+  </div>
+
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="Images/profile2.jpg" alt="">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore alias omnis expedita commodi
+            laudantium quae, fuga quis odio incidunt ipsam autem facilis animi vel eos aut in, tempora
+            corrupti possimus earum sed minus quaerat optio. Saepe reprehenderit molestiae tempore vitae
+            officiis aperiam perspiciatis ipsum, repellat quasi dignissimos, maiores ex placeat.ś</p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Web Developer</span><br>Web app Development</li>
+              <li><span>UI/UX</span><br>Designing web/app interfaces</li>
+              <li><span>Problem Solving</span></li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>B.Tech CSE</span><br>Lovely Professional University</li>
+              <li><span>Schooling</span><br>Central Children Academy</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Experties</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-crop"></i>
+          <h2>UI/UX</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nemo dolor eaque, totam omnis quam
+            earum delectus quibusdam rem quas! Veniam provident corporis inventore id possimus maxime nemo
+            ullam in. Eius sequi minus illum dolor dolorem veritatis animi velit id?</p>
+          <a href="">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Developing</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nemo dolor eaque, totam omnis quam
+            earum delectus quibusdam rem quas! Veniam provident corporis inventore id possimus maxime nemo
+            ullam in. Eius sequi minus illum dolor dolorem veritatis animi velit id?</p>
+          <a href="">Learn more</a>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-people-group"></i>
+          <h2>Team Building</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nemo dolor eaque, totam omnis quam
+            earum delectus quibusdam rem quas! Veniam provident corporis inventore id possimus maxime nemo
+            ullam in. Eius sequi minus illum dolor dolorem veritatis animi velit id?</p>
+          <a href="">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="Images/piggame.png" alt="">
+          <div class="layer">
+            <h3>Pig Game</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, pariatur.</p>
+            <a href="../Web Projects/Pig Game/index.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="Images/landing_page.png" alt="">
+          <div class="layer">
+            <h3>Website Landing Page</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, pariatur.</p>
+            <a href="../Web Projects/Simple Website/index.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="Images/tindog.jpg" alt="">
+          <div class="layer">
+            <h3>Tindog</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, pariatur.</p>
+            <a href="https://lakshya5025.github.io/tindog/"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+      </div>
+      <a href="" class="btn">See more</a>
+    </div>
+  </div>
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-solid fa-paper-plane"></i> lakshagupta916640@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i> 9166405850</p>
+          <div class="social-icons">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+          <a href="Images/fun_resume.png" download="" class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet" id="input-form">
+            <input type="text" name="Name" placeholder="Your Name" Required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" id="" cols="30" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" id="submit-btn" class="btn btn2">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright @ Lakshya Gupta</p>
+    </div>
+  </div>
+
+
+
+  <script>
+    let tablinks = document.getElementsByClassName("tab-links");
+    let tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link")
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab")
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab")
+    }
+
+    let sidemenu = document.getElementById("sidemenu")
+    function openmenu() {
+      sidemenu.style.right = "0";
+    }
+    function closemenu() {
+      sidemenu.style.right = "-200px";
+    }
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Get reference to the form
+      const form = document.querySelector("form");
+
+      // Add event listener to the submit button
+      form.addEventListener("submit", function (event) {
+        // Prevent the default form submission
+        event.preventDefault();
+
+        // Reset the form after 5 seconds
+        setTimeout(function () {
+          form.reset();
+        }, 5000);
+      });
+    });
+
+  </script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxXqESq60__KJ_xJ2-Q7rEJiP5jW1BGsD-5bGB5SjqN1TOqXe1tAR-TG0yrfv3E7A7t/exec'
+    const form = document.forms['submit-to-google-sheet']
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+
+</html>
